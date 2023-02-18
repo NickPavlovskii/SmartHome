@@ -1,10 +1,9 @@
-// The only changes made to this file is naming the function that closes the Nav Items. And I did that so we could re-execute it on click of the nav links to close the nav menu
 
 
 
-const menuBtn = document.querySelector("#menu-btn");
+const menuBtn = document.querySelector("#menu_btn");
 const closeBtn = document.querySelector("#close-btn");
-const menu = document.querySelector(".nav__items");
+const menu = document.querySelector(".nav_itm");
 
 // open nav menu
 menuBtn.addEventListener("click", () => {
@@ -31,13 +30,13 @@ closeBtn.addEventListener("click", () => {
 
 
 // show/hide faqs
-const faqs = document.querySelectorAll('.faq');
+const faqs = document.querySelectorAll('.faqs');
 
 faqs.forEach(faq => {
     faq.addEventListener('click', () => {
-        faq.classList.toggle('open');
+        faq.classList.toggle('faq_open');
         // change icon
-        const icon = faq.querySelector('.faq__icon i');
+        const icon = faq.querySelector('.faq_icon i');
         if(icon.className === 'uil uil-plus') {
             icon.className = 'uil uil-minus';
         } else {
